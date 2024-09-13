@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:  #c563c6; 
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: black; 
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 6px; 
+    margin-bottom: 30px;
+    border:20px;
+    padding: 20px 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    border: 2px solid #bdc3c7; 
+    color: #23303d; 
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.cell:hover {
+    background-color: beige; 
+    box-shadow: 0 4px 8px rgba(0, 0.2, 0, 0.2); 
+}
+
+#message {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: black; 
+    text-transform: capitalize;
+    font-weight:bolder
+}   
+
+#restart-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: green; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#restart-btn:hover {
+    background-color: darkgreen; 
+    transform: scale(1.05); 
+}
+.winning-cell {
+    background-color: rgb(196, 196, 119); 
+    color: #fff; 
+    box-shadow: 0 0 10px rgba(216, 1, 1, 0.8); 
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
